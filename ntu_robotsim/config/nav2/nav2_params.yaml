@@ -134,8 +134,10 @@ planner_server:
     planner_plugins: ["GridBased"]
 
     # NavFn planner
+#    GridBased:
+#      plugin: "nav2_navfn_planner/NavfnPlanner"
     GridBased:
-      plugin: "nav2_navfn_planner/NavfnPlanner"
+      plugin: "nav2_theta_star_planner/ThetaStarPlanner"
       tolerance: 0.5
       use_astar: false
       allow_unknown: true

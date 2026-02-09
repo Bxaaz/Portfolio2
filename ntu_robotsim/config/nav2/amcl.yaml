@@ -3,8 +3,8 @@ amcl:
     use_sim_time: True
 
     # Particle filter parameters
-    min_particles: 500
-    max_particles: 2000
+    min_particles: 2000
+    max_particles: 5000
 
     # Odometry model parameters (for differential drive)
     odom_model_type: "diff"
@@ -21,8 +21,8 @@ amcl:
     laser_min_range: 0.1
 
     # Update parameters
-    update_min_d: 0.25  # Minimum translation before update (metres)
-    update_min_a: 0.2   # Minimum rotation before update (radians)
+    update_min_d: 0.5  # Minimum translation before update (metres)
+    update_min_a: 0.5   # Minimum rotation before update (radians)
     resample_interval: 1  # Resample every n updates
 
     # Transform parameters
